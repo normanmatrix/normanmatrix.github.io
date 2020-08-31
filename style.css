@@ -70,14 +70,6 @@ body > img {
 }
 .trinity {
 }
-@media only screen and (max-width: 900px) {
-    body > img:nth-child(1) {
-        margin-top: 0;
-    }
-    body > img:nth-child(2) {
-        margin-top: 35px;
-    }
-}
 
 div.menu {
     text-align: right;
@@ -87,34 +79,6 @@ body > div {
     width: 600px;
     max-width: 100%;
     margin: 40px 0 0 0;
-}
-
-@media only screen and (max-width: 900px) {
-    body > div {
-        margin: 40px 0 0 0;
-        padding: 0 10px;
-        font-size: .75em;
-        box-sizing: border-box;
-    }
-}
-
-body > div.scroller {
-    width: 400px;
-    height: 160px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body > div.scroller-overlay {
-    margin:0;
-    padding:0;
-    position: relative;
-    top: -40px;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(0deg,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
 
 body > div.heavy {
@@ -180,12 +144,6 @@ footer {
     color: black;
 }
 
-@media only screen and (max-width: 900px) {
-    footer {
-        font-size: .75em;
-        text-align: left;
-    }
-}
 
 .footer-content {
     padding: 20px 60px;
@@ -206,18 +164,12 @@ footer a, footer a:hover, footer a:active, footer a:visited {
     height:auto;
 }
 
-@media only screen and (max-width: 1150px) {
-    .molecules > img:nth-child(1), img:nth-child(3), img:nth-child(5) {
-        margin-left: calc((1150px - 100%) / 3 * -1);
-    }
-    .molecules > img:nth-child(2), img:nth-child(4), img:nth-child(6) {
-        margin-right: calc((1150px - 100%) / 3 * -1);
-    }
-}
-
 @media only screen and (max-width: 900px) {
     .molecules {
         display: none;
+    }
+    .button {
+        font-size: 16px;
     }
 }
 
